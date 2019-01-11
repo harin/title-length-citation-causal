@@ -788,7 +788,7 @@ regress(1000).conf_int().loc['title_len_words']
 
 # Conclusion
 
-If OLS is a valid way to remove confounding between "Title length" and "Number of Citations" then, this experiment have not quite proven that shorter title length results in more citation, as the confidence interval of the coefficient of the title length may still be due to randomness. 
+If OLS is a valid way to remove confounding between "Title length" and "Number of Citations", then this experiment have not quite proven that shorter title length results in more citation, as the confidence interval of the coefficient of the title length have shown that it may still be due to randomness at a 95% confidence interval. 
 
-More important, we first need to verify whether OLS is in fact a good estimator for the causal effect in presence of *non-binary causal state* and *categorical confounder*. Furthermore, here we are not nearly close to the amount of data we have. Each sample we run give conflicting results, some successfully rejects the null, while other did not.
+More importantly, we first need to verify whether OLS is in fact a good estimator for the causal effect in presence of *non-binary causal state* and *categorical confounder*. Furthermore, here we are using only a subset of the data we have due to the limit imposes by the categorical data. Each sample we run give conflicting results, some successfully rejects the null, while other did not.
 
